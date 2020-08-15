@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Custom scroll</title>
+	<link rel="stylesheet" href="src/scroll.css">
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		body {
+			margin: 100px;
+		}
+		.example {
+			overflow: hidden;
+		}
+		.example-1 {
+			height: 150px;
+		}
+		.example-2 {
+			height: 200px;
+			width: 100px;
+		}
+		.example-2 ul li {
+			display: inline-block;
+		}
+		li {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 200px;
+			margin-bottom: 10px;
+			width: 200px;
+			background: #ccc;
+		}
+	</style>
+</head>
+<body>
+	<h2>Without line</h2>
+	<div class="example example-1" id="scroll-1">
+		<ul>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+		</ul>
+	</div>
+	<h2>Vertical scroll</h2>
+	<div class="example example-2" id="scroll-2">
+		<ul>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+		</ul>
+	</div>
+	<script src="src/scroll.js"></script>
+	<script>
+		new Scroll('scroll-1');
+	</script>
+</body>
+</html>

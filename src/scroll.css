@@ -1,0 +1,26 @@
+.scroll__line {
+	box-sizing: border-box;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.scroll__line-height {
+	height: 100%;
+}
+
+.scroll__line-width {
+	width: 100%;
+}
+
+.scroll__block {
+	position: relative; 	
+}
+
+.scroll__line-height .scroll__block {
+	width: 100%;
+}
+
+.scroll__line-width .scroll__block {
+	height: 100%;
+}
